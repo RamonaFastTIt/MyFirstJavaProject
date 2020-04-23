@@ -2,34 +2,52 @@ package AnimalRescue;
 
 public class AppMain {
     public static void main(String[] args) {
-        Dog myObject = new Dog();
-        System.out.println(myObject.name);
-        System.out.println(myObject.age);
-        System.out.println(myObject.color);
-        System.out.println(myObject.race);
-        System.out.println(myObject.weight);
-        System.out.println(myObject.feelingHungry);
-        System.out.println(myObject.levelMood);
-        System.out.println(myObject.levelOfHealth);
-        System.out.println(myObject.food);
-        System.out.println(myObject.recreation);
+        Dog tina = new Dog();
+        tina.setName("Tina");
+        tina.setAge (10);
+        tina.setColor("Brown");
+        tina.setRace("Basset");
+        tina.setWeight ((float) 20.5);
+        tina.setLevelOfHealth(10);
+        tina.setFeelingHungry(10);
+        tina.setLevelMood(10);
+        System.out.println(tina.getName());
+        System.out.println(tina.getAge());
+        System.out.println(tina.getColor());
+        System.out.println(tina.getRace());
+        System.out.println(tina.getWeight());
+        System.out.println(tina.getLevelOfHealth());
+        System.out.println(tina.getFeelingHungry());
+        System.out.println(tina.getLevelMood());
 
-        Adoptator MyObject = new Adoptator();
-        System.out.println(MyObject.name);
-        System.out.println(MyObject.age);
-        System.out.println(MyObject.money);
 
-        AnimalFood MyFood = new AnimalFood();
-        System.out.println(MyFood.name);
-        System.out.println(MyFood.price);
-        System.out.println(MyFood.quantity);
-        System.out.println(MyFood.stock);
+        Adoptator girl = new Adoptator();
+        girl.setName("Mya");
+        girl.setAge(28);
+        girl.setMoney(28.346);
+        System.out.println(girl.getName());
+        System.out.println(girl.getAge());
+        System.out.println(girl.getMoney());
+
+
+        AnimalFood food = new AnimalFood();
+        food.setName("Husse");
+        food.setPrice(37);
+        food.setQuantity(4);
+        food.setStock(12);
+        System.out.println(food.getName());
+        System.out.println(food.getPrice());
+        System.out.println(food.getQuantity());
+        System.out.println(food.getStock());
 
         Recreation activities = new Recreation();
-        System.out.println(activities.recreation);
+        activities.setRecreation("Run, Play, Sleep");
+        System.out.println(activities.getRecreation());
 
         VetDoctor save = new VetDoctor();
-        System.out.println(save.name);
-        System.out.println(save.specialization);
+        save.setName("Ho Go Vet");
+        save.setSpecialization("General, Surgery");
+        System.out.println(save.getName());
+        System.out.println(save.getSpecialization());
     }
 }

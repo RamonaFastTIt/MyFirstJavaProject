@@ -1,18 +1,74 @@
 package AnimalRescue;
 
 public class Dog {
-    public String name = "Tina";
-    public int age = 10;
-    public String color = "Brown";
-    public String race = "Basset";
-    public float weight = 20.5F;
-    public int levelOfHealth = 10;
-    public int feelingHungry = 10;
-    public int levelMood = 10;
-    public String food = "Pork";
-    public String recreation = "Bark";
+    private String name;
+    private int age;
+    private String color;
+    private String race ;
+    private float weight;
+    private int levelOfHealth;
+    private int feelingHungry;
+    private int levelMood;
 
-        public void eat() {
+
+    public String getName() {
+        return name;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+    public int getAge(){
+        return age;
+    }
+    public void setAge(int age){
+        this.age = age;
+    }
+    public String getColor(){
+        return color;
+    }
+    public void setColor(String color){
+        this.color = color;
+    }
+    public String getRace(){
+        return race;
+    }
+    public void setRace(String race){
+        this.race = race;
+    }
+
+    public float getWeight() {
+        return weight;
+    }
+
+    public void setWeight(float weight) {
+        this.weight = weight;
+    }
+
+    public int getLevelOfHealth() {
+        return levelOfHealth;
+    }
+
+    public void setLevelOfHealth(int levelOfHealth) {
+        this.levelOfHealth = levelOfHealth;
+    }
+
+    public int getFeelingHungry() {
+        return feelingHungry;
+    }
+
+    public void setFeelingHungry(int feelingHungry) {
+        this.feelingHungry = feelingHungry;
+    }
+
+    public int getLevelMood() {
+        return levelMood;
+    }
+
+    public void setLevelMood(int levelMood) {
+        this.levelMood = levelMood;
+    }
+
+    public void eat() {
         System.out.println("Eating.."); }
         public void run(){
             System.out.println("Running..");

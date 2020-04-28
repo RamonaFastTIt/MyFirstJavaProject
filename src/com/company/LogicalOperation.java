@@ -10,12 +10,17 @@ public class LogicalOperation {
         }
     }
 
-    public String checkTexAndNumber(String Text, int number) {
-        if ((Text.equals("FastTrackIt")) && (number < 3)) {
+    public String checkTexAndNumber(String Text, int number)
+    {
+        if ((Text.equals("FastTrackIt")) && (number <= 3))
+        {
             return (Text + number);
-        } else {
+        }
+        if ((!Text.equals("FastTrackIt")) && (number > 4))
+        {
             return (number + Text);
         }
+        return null;
     }
 
     public String checkNumber(int z) {
@@ -40,19 +45,19 @@ public class LogicalOperation {
         return null;
     }
 
-    public String NumberEven(int p) {
+    public boolean NumberEven(int p) {
         if (p % 2 == 0) {
-            return ("True");
+            return (true);
         } else {
-            return ("False");
+            return (false);
         }
     }
 
-    public String EligibleToVote(int q) {
+    public boolean EligibleToVote(int q) {
         if (q > 18) {
-            return ("True");
+            return (true);
         } else {
-            return ("False");
+            return (false);
         }
     }
 

@@ -1,5 +1,9 @@
 package com.company;
 
+import org.w3c.dom.ls.LSOutput;
+
+import javax.swing.*;
+
 public class LogicalOperation {
 
     public int checkBiggerNumber(int first, int second) {
@@ -10,14 +14,11 @@ public class LogicalOperation {
         }
     }
 
-    public String checkTexAndNumber(String Text, int number)
-    {
-        if ((Text.equals("FastTrackIt")) && (number <= 3))
-        {
+    public String checkTexAndNumber(String Text, int number) {
+        if ((Text.equals("FastTrackIt")) && (number <= 3)) {
             return (Text + number);
         }
-        if ((!Text.equals("FastTrackIt")) && (number > 4))
-        {
+        if ((!Text.equals("FastTrackIt")) && (number >= 4)) {
             return (number + Text);
         }
         return null;
@@ -96,7 +97,248 @@ public class LogicalOperation {
         }
         return null;
     }
-}
+
+
+    public void checkreceivednumber(int x) {
+        for (x = x; x <= 100; x++) {
+            System.out.print(x + " ");
+        }
+        System.out.println("\n");
+    }
+
+    public void checknumber(int v) {
+        for (v = v; v >= -100; v--) {
+            System.out.println(v + " ");
+        }
+        System.out.println("\n");
+    }
+
+    public void coutingnumber(int k, int g) {
+        if (k <= g) {
+            for (k = k; k <= g; k++) {
+                System.out.println(k + " ");
+            }
+        } else
+            for (g = g; g >= k; g++) {
+                System.out.println(g + " ");
+            }
+        System.out.println("\n");
+    }
+
+    public void evenumber(int n1) {
+        {
+            for (n1 = 1; n1 <= 100; n1++)
+                if (n1 % 2 == 0) {
+                    System.out.println(n1 + " ");
+                }
+        }
+    }
+
+    public void oddnumber(int m1) {
+        for (m1 = 1; m1 <= 100; m1++)
+            if (m1 % 2 != 0) {
+                System.out.println(m1 + " ");
+            }
+    }
+
+    public void ex4(int pp, int rr) {
+        if (pp <= rr) {
+            for (pp = rr; pp <= rr; pp++) {
+                System.out.println(pp + " ");
+            }
+        } else
+            for (rr = rr; rr <= pp; rr++) {
+                System.out.println(rr + " ");
+            }
+        System.out.println("\n");
+
+    }
+
+    public void ex7sum(int i) {
+        int sum = 0;
+        for (i = 33; i <= 100; i++) {
+            sum += i;
+        }
+        System.out.println(sum);
+    }
+
+    public float ex8sumandaverage(int i) {
+        float sum = 0;
+        for (i = 34; i < +100; i++) {
+            sum += i;
+        }
+        float average = sum / 100;
+        System.out.println(sum);
+        return (average);
+    }
+
+    public void pattern() {
+        int t, u;
+        for (t = 7; t > 0; t--) {
+            for (u = t; u > 0; u--) {
+                System.out.print("*");
+            }
+            System.out.println("\n");
+        }
+    }
+
+
+    public void whilecheckreceivednumber(int j) {
+        while (j <= 100) {
+            System.out.println(j + " ");
+            j++;
+        }
+        System.out.println(" \n");
+    }
+
+    public void wwhilereceivednumber(int j) {
+
+        while (j >= -100) {
+            System.out.println(j + " ");
+            j--;
+        }
+
+        System.out.println(" \n");
+    }
+    public void countStoDwhile(int s, int d){
+        while(s<=d){
+            System.out.println(s+" ");
+            s++;
+        }
+        System.out.println("\n");
+
+    }
+    public void checkbiggernumberandcountStoD(int s, int d){
+        if(s<d){
+            while (s<=d){
+                System.out.println(s+ " ");
+                s++;
+            }
+
+        }else if (s>d){
+            while (d<=s){
+                System.out.println(d+" ");
+                d++;
+            }
+        }
+        else System.out.println("numerele sunt egale");
+        System.out.println("\n");
+    }
+    public void whileEvenNumber(int x) {
+        {
+            while (x <= 100) {
+                if (x % 2 == 0)
+                    System.out.println(x + " ");
+                    x++;
+                }
+            }
+        }
+        public void whileOddNumber(int x){
+        while (x<=100){
+            if (x%2!=0)
+                System.out.println(x+ "  ");
+            x++;
+        }
+        }
+        public float ex8Division(int a, int b) {
+        float count = 0F;
+        float sum = 0F;
+        while (a<=b){
+            if(a%7==0){
+                count +=1;
+                sum+=a;
+            }
+            a++;
+        }
+        float average=sum/count;
+            System.out.println("media numarului din intervalul a si b : ");
+            return average;
+
+        }
+        public void whileEx7(){
+        int x = 111;
+        int count = 0;
+        int sum =0;
+        while (x<=8899){
+            sum+=x;
+            count++;
+            x++;
+        }
+            System.out.println(" suma numerelor este:" +sum);
+            System.out.println(" media numerelor este:" + sum/count);
+            System.out.println("\n");
+        }
+
+        public void Fibonacci()
+        {
+            int x=0;
+            int y=1;
+            int i=1;
+            int F=0;
+            while (i<=20)
+            {
+                F=x+y;
+                x=y;
+                y=F;
+                i++;
+                System.out.println(F);
+            }
+
+        }
+
+        public void CozaLozaWoza()
+        {
+            int i=1;
+                    while(i<=110)
+                    {
+                       if(i%11==0)
+                       {
+                           System.out.println(i+" \n ");
+                       }
+                        else if (i%3==0 && i%5==0 && i%7==0) {
+                            System.out.print("CozaLozaWoza");
+                        }
+                        else if(i%3==0 && i%5==0) {
+                            System.out.print("CozaLoza");
+                        }
+                        else if (i % 3 == 0 && i % 7 == 0) {
+                            System.out.print("CozaWoza");
+                        }
+                        else if (i % 5 == 0 && i % 7 == 0)
+                        {
+                            System.out.print("WozaLoza");
+                        }
+                        else if (i % 3 == 0)
+                        {
+                            System.out.print("Coza");
+                        }
+                        else if (i%5==0)
+                        {
+                            System.out.print("Loza");
+                        }
+                        else if(i%7==0)
+                        {
+                            System.out.print("Woza");
+                        }
+                        else
+                            System.out.print(i+ " ");
+                            i++;
+                        }
+
+                    }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

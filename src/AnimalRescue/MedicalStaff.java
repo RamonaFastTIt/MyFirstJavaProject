@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class VetDoctor {
+public class MedicalStaff {
     public String name = "Ho Go Vet";
     public String specialization = "General, Surgery, ";
 
@@ -21,8 +21,8 @@ public class VetDoctor {
 
     public void consult(){
         System.out.println("Consulting..");}
-        public void havingSurgery(){
-            System.out.println("Having...");
-        }
+    public void havingSurgery(){
+        System.out.println("Having...");
+    }
 
 }

@@ -20,6 +20,9 @@ public class AppMain {
         System.out.println(tina.getFeelingHungry());
         System.out.println(tina.getLevelMood());
 
+        Cat zizou =new Cat();
+        zizou.setName("Zizou");
+
 
         Adoptator girl = new Adoptator();
         girl.setName("Mya");
@@ -30,7 +33,7 @@ public class AppMain {
         System.out.println(girl.getMoney());
 
 
-        AnimalFood food = new AnimalFood();
+        Food food = new Food();
         food.setName("Husse");
         food.setPrice(37);
         food.setQuantity(4);
@@ -44,7 +47,7 @@ public class AppMain {
         activities.setRecreation("Run, Play, Sleep");
         System.out.println(activities.getRecreation());
 
-        VetDoctor save = new VetDoctor();
+        Doctor save = new Doctor();
         save.setName("Ho Go Vet");
         save.setSpecialization("General, Surgery");
         System.out.println(save.getName());

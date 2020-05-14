@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class MedicalStaff {
+public class MedicalStaff extends HumanBeing {
     public String name = "Ho Go Vet";
     public String specialization = "General, Surgery, ";
 
@@ -21,7 +21,7 @@ public class MedicalStaff {
 
     public void consult(){
         System.out.println("Consulting..");}
-    public void havingSurgery(){
+    public void have(){
         System.out.println("Having...");
     }
 

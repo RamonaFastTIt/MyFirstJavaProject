@@ -4,7 +4,7 @@ public class Animal {
     private String name;
     private int age;
     private String color;
-    private String race ;
+    private String race;
     private float weight;
     private int levelOfHealth;
     private int feelingHungry;
@@ -14,25 +14,32 @@ public class Animal {
     public String getName() {
         return name;
     }
-    public void setName(String name){
+
+    public void setName(String name) {
         this.name = name;
     }
-    public int getAge(){
+
+    public int getAge() {
         return age;
     }
-    public void setAge(int age){
+
+    public void setAge(int age) {
         this.age = age;
     }
-    public String getColor(){
+
+    public String getColor() {
         return color;
     }
-    public void setColor(String color){
+
+    public void setColor(String color) {
         this.color = color;
     }
-    public String getRace(){
+
+    public String getRace() {
         return race;
     }
-    public void setRace(String race){
+
+    public void setRace(String race) {
         this.race = race;
     }
 
@@ -68,17 +75,33 @@ public class Animal {
         this.levelMood = levelMood;
     }
 
-    public void eat() { System.out.println("Eating.."); }
-    public void run(){
-        System.out.println("Running..");
-    }
-    public void bark(){
-        System.out.println("HamHam");
-    }
-    public void sleep(){
-        System.out.println("ZzZZ");
+    public void eat() {
+        System.out.println("Eating..");
     }
 
-}
+    public void run() {
+        System.out.println("Running..");
+    }
+
+    public void sleep() {
+        System.out.println(" Sleeping ZzZZ");
+    }
+
+    public void play() {
+        System.out.println("Playing..");
+
+        }
+        public void speak(){
+            System.out.println(" Sunete");
+        }
+        public void pet(){
+            System.out.println("Behaving..");
+        }
+        public void walk(){
+            System.out.println("Walking..");
+        }
+    }
+
+
 
 

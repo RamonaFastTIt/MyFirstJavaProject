@@ -1,8 +1,5 @@
 package com.company;
-
-import org.w3c.dom.ls.LSOutput;
-
-import javax.swing.*;
+import java.util.Arrays;
 
 public class LogicalOperation {
 
@@ -113,13 +110,13 @@ public class LogicalOperation {
         System.out.println("\n");
     }
 
-    public void coutingnumber(int k, int g) {
+    public void countingnumber(int k, int g) {
         if (k <= g) {
             for (k = k; k <= g; k++) {
                 System.out.println(k + " ");
             }
         } else
-            for (g = g; g >= k; g++) {
+            for (g = g; g <= k; g++) {
                 System.out.println(g + " ");
             }
         System.out.println("\n");
@@ -143,7 +140,7 @@ public class LogicalOperation {
 
     public void ex4(int pp, int rr) {
         if (pp <= rr) {
-            for (pp = rr; pp <= rr; pp++) {
+            for (pp = pp; pp <= rr; pp++) {
                 System.out.println(pp + " ");
             }
         } else
@@ -156,20 +153,21 @@ public class LogicalOperation {
 
     public void ex7sum(int i) {
         int sum = 0;
-        for (i = 33; i <= 100; i++) {
+        for (i = i; i <= 100; i++) {
             sum += i;
         }
         System.out.println(sum);
     }
 
     public float ex8sumandaverage(int i) {
-        float sum = 0;
-        for (i = 34; i < +100; i++) {
+        float sum = 0F;
+        int count = 0;
+        for (i = i; i < +100; i++) {
             sum += i;
+            count = count + 1;
         }
-        float average = sum / 100;
-        System.out.println(sum);
-        return (average);
+        System.out.println("media este: ");
+        return sum / count;
     }
 
     public void pattern() {
@@ -200,133 +198,222 @@ public class LogicalOperation {
 
         System.out.println(" \n");
     }
-    public void countStoDwhile(int s, int d){
-        while(s<=d){
-            System.out.println(s+" ");
+
+    public void countStoDwhile(int s, int d) {
+        while (s <= d) {
+            System.out.println(s + " ");
             s++;
         }
         System.out.println("\n");
 
     }
-    public void checkbiggernumberandcountStoD(int s, int d){
-        if(s<d){
-            while (s<=d){
-                System.out.println(s+ " ");
+
+    public void checkbiggernumberandcountStoD(int s, int d) {
+        if (s < d) {
+            while (s <= d) {
+                System.out.println(s + " ");
                 s++;
             }
 
-        }else if (s>d){
-            while (d<=s){
-                System.out.println(d+" ");
+        } else if (s > d) {
+            while (d <= s) {
+                System.out.println(d + " ");
                 d++;
             }
-        }
-        else System.out.println("numerele sunt egale");
+        } else System.out.println("numerele sunt egale");
         System.out.println("\n");
     }
+
     public void whileEvenNumber(int x) {
         {
             while (x <= 100) {
                 if (x % 2 == 0)
                     System.out.println(x + " ");
-                    x++;
-                }
+                x++;
             }
         }
-        public void whileOddNumber(int x){
-        while (x<=100){
-            if (x%2!=0)
-                System.out.println(x+ "  ");
+    }
+
+    public void whileOddNumber(int x) {
+        while (x <= 100) {
+            if (x % 2 != 0)
+                System.out.println(x + "  ");
             x++;
         }
-        }
-        public float ex8Division(int a, int b) {
+    }
+
+    public float ex8Division(int a, int b) {
         float count = 0F;
         float sum = 0F;
-        while (a<=b){
-            if(a%7==0){
-                count +=1;
-                sum+=a;
+        while (a <= b) {
+            if (a % 7 == 0) {
+                count += 1;
+                sum += a;
             }
             a++;
         }
-        float average=sum/count;
-            System.out.println("media numarului din intervalul a si b : ");
-            return average;
+        float average = sum / count;
+        System.out.println("media numarului din intervalul a si b : ");
+        return average;
 
-        }
-        public void whileEx7(){
+    }
+
+    public void whileEx7() {
         int x = 111;
         int count = 0;
-        int sum =0;
-        while (x<=8899){
-            sum+=x;
+        int sum = 0;
+        while (x <= 8899) {
+            sum += x;
             count++;
             x++;
         }
-            System.out.println(" suma numerelor este:" +sum);
-            System.out.println(" media numerelor este:" + sum/count);
-            System.out.println("\n");
+        System.out.println(" suma numerelor este:" + sum);
+        System.out.println(" media numerelor este:" + sum / count);
+        System.out.println("\n");
+    }
+
+    public void Fibonacci() {
+        int x = 0;
+        int y = 1;
+        int i = 1;
+        int F = 0;
+        while (i <= 20) {
+            F = x + y;
+            x = y;
+            y = F;
+            i++;
+            System.out.println(F);
         }
 
-        public void Fibonacci()
-        {
-            int x=0;
-            int y=1;
-            int i=1;
-            int F=0;
-            while (i<=20)
-            {
-                F=x+y;
-                x=y;
-                y=F;
-                i++;
-                System.out.println(F);
+    }
+
+    public void CozaLozaWoza() {
+        int i = 1;
+        while (i <= 110) {
+            if (i % 11 == 0) {
+                System.out.println(i + " \n ");
+            } else if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0) {
+                System.out.print("CozaLozaWoza");
+            } else if (i % 3 == 0 && i % 5 == 0) {
+                System.out.print("CozaLoza");
+            } else if (i % 3 == 0 && i % 7 == 0) {
+                System.out.print("CozaWoza");
+            } else if (i % 5 == 0 && i % 7 == 0) {
+                System.out.print("WozaLoza");
+            } else if (i % 3 == 0) {
+                System.out.print("Coza");
+            } else if (i % 5 == 0) {
+                System.out.print("Loza");
+            } else if (i % 7 == 0) {
+                System.out.print("Woza");
+            } else
+                System.out.print(i + " ");
+            i++;
+        }
+
+    }
+
+    public int[] getArrayHundred() {
+        int array[] = new int[100];
+        for (int i = 0; i < 100; i++) {
+            array[i] = i + 1;
+        }
+        return array;
+    }
+
+    public void printArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
+    }
+
+    public int[] PB3(int[] arrayEven) {
+        for (int i = 0; i < 100; i++) {
+            arrayEven[i] = i + 1;
+            if (arrayEven[i] % 2 == 0) {
+                System.out.println(arrayEven[i]);
             }
-
         }
+        return arrayEven;
+    }
 
-        public void CozaLozaWoza()
+    public double PB4(int[] array) {
+        double sum = 0;
+        int count = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+            count += 1;
+        }
+        return sum / count;
+    }
+
+    public boolean PB5(String[] array)
+    {
+        String a="monica";
+        for (int i = 0; i < array.length; i++)
         {
-            int i=1;
-                    while(i<=110)
-                    {
-                       if(i%11==0)
-                       {
-                           System.out.println(i+" \n ");
-                       }
-                        else if (i%3==0 && i%5==0 && i%7==0) {
-                            System.out.print("CozaLozaWoza");
-                        }
-                        else if(i%3==0 && i%5==0) {
-                            System.out.print("CozaLoza");
-                        }
-                        else if (i % 3 == 0 && i % 7 == 0) {
-                            System.out.print("CozaWoza");
-                        }
-                        else if (i % 5 == 0 && i % 7 == 0)
-                        {
-                            System.out.print("WozaLoza");
-                        }
-                        else if (i % 3 == 0)
-                        {
-                            System.out.print("Coza");
-                        }
-                        else if (i%5==0)
-                        {
-                            System.out.print("Loza");
-                        }
-                        else if(i%7==0)
-                        {
-                            System.out.print("Woza");
-                        }
-                        else
-                            System.out.print(i+ " ");
-                            i++;
-                        }
-
-                    }
+            if (a==array[i]) {
+                return true;
+            }
+            else {
+                return false;
+            }
         }
+        return false;
+    }
+    public int prb6checkArrayPosition(int[] array , int nr){
+        int upr = -1;
+        for( int i =0; i< array.length; i++){
+            if (array[i] == nr) {
+                System.out.print(" true!!! numarul se afla in array si pozitia lui este : ");
+                upr = i;
+
+            }
+        }
+        return upr;
+    }
+
+    public void grid(){
+        int [][] a = new int [10][10];
+        for (int i = 0; i < 10; i++){
+            for(int j = 0; j < 10; j++){
+                System.out.printf("-");
+            }
+            System.out.println();
+
+        }
+    }
+
+
+    //public int[] PB8(int[] array)
+    {
+       // int x=10;
+       // for (int i = 0; i < array.length; i++)
+           // if (x == array[i])
+               // System.out.println(array[i]);
+       // return array;
+    }
+    public void Prb10copyArray(int[] array,int[] arrayGol){
+        for(int i=0; i<array.length;i++){
+            arrayGol[i]=array[i];
+        }
+
+    }
+
+    public int secondSmallArrayNr(int[] array) {
+        Arrays.sort(array);
+        return array[1];
+    }
+
+
+    }
+
+
+
+
+
+
+
 
 
 

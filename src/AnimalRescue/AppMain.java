@@ -137,9 +137,70 @@ public class AppMain {
         System.out.println(food.getStock());
         food.producer();
         food.distribute();
+        System.out.println("\n");
 
         
+        GoldenRetriever paco = new GoldenRetriever();
+        paco.eat();
+        paco.run();
+        paco.play();
+        paco.walk();
+        System.out.println("\n");
 
+        Bichon dolly = new Bichon();
+        dolly.eat();
+        dolly.run();
+        dolly.speak();
+        dolly.walk();
+        System.out.println("\n");
+
+
+        BrittishShortHair blue = new BrittishShortHair();
+        blue.run();
+        blue.eat();
+        blue.play();
+        System.out.println("\n");
+
+        BengalCat lucy = new BengalCat();
+        lucy.eat();
+        lucy.sleep();
+        lucy.speak();
+        lucy.run();
+        System.out.println("\n");
+
+        Mandarin pikie = new Mandarin();
+        pikie.eat();
+        pikie.speak();
+        pikie.run();
+        pikie.sleep();
+        System.out.println("\n");
+
+        Boy Bogdan = new Boy();
+        Bogdan.buy();
+        Bogdan.save();
+        Bogdan.spend();
+        System.out.println("\n");
+
+        Girl Alexa = new Girl();
+        Alexa.buy();
+        Alexa.save();
+        Alexa.spend();
+        System.out.println("\n");
+
+        Husse juniorAndsenior = new Husse();
+        juniorAndsenior.producer();
+        juniorAndsenior.distribute();
+        System.out.println("\n");
+
+        Animax animals = new Animax();
+        animals.producer();
+        animals.distribute();
+        System.out.println("\n");
+
+        Nurse Ale = new Nurse();
+        Ale.save();
+        Ale.spend();
+        System.out.println("\n");
 
     }
 }

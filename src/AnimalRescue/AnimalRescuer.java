@@ -32,8 +32,19 @@ public class AnimalRescuer extends HumanBeing {
     }
     public void save(){
         System.out.println("Saving..");}
+
     public void spend(){
         System.out.println("Spending..");
+    }
+
+    @Override
+    public void consult() {
+
+    }
+
+    @Override
+    public void have() {
+
     }
 
 }

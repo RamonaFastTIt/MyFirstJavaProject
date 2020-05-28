@@ -7,7 +7,18 @@ public void eat(){
 public void run(){
     System.out.println("Running silently");
 }
-public void speak(){
+
+    @Override
+    public void sleep() {
+
+    }
+
+    @Override
+    public void play() {
+
+    }
+
+    public void speak(){
     System.out.println(" Meow ");
 }
 public void pet (){

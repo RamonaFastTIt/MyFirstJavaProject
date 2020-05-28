@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class Food {
+public abstract class Food {
     private String name;
     private int price;
     private int quantity;
@@ -38,11 +38,8 @@ public class Food {
         this.stock = stock;
     }
 
-    public void producer(){
-        System.out.println("Producing..");}
-    public void distribute(){
-        System.out.println("Distributing..");
-    }
+    public  abstract void producer();
+    public abstract void distribute();
 
 
 }

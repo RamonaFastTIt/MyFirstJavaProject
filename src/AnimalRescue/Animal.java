@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class Animal {
+public abstract class Animal {
     private String name;
     private int age;
     private String color;
@@ -75,31 +75,19 @@ public class Animal {
         this.levelMood = levelMood;
     }
 
-    public void eat() {
-        System.out.println("Eating..");
-    }
+    public abstract void eat() ;
 
-    public void run() {
-        System.out.println("Running..");
-    }
+    public abstract void run();
 
-    public void sleep() {
-        System.out.println(" Sleeping ZzZZ");
-    }
+    public abstract void sleep();
 
-    public void play() {
-        System.out.println("Playing..");
+    public abstract void play();
 
-        }
-        public void speak(){
-            System.out.println(" Sunete");
-        }
-        public void pet(){
-            System.out.println("Behaving..");
-        }
-        public void walk(){
-            System.out.println("Walking..");
-        }
+    public abstract void speak();
+
+    public abstract void pet();
+
+    public abstract void walk();
     }
 
 

@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class HumanBeing {
+public abstract class HumanBeing {
     private String name;
     private int age;
     private double money;
@@ -37,21 +37,15 @@ public class HumanBeing {
     }
 
 
-    public void buy(){
-        System.out.println("Buying..");
-    }
-    public void save(){
-        System.out.println("Saving..");}
-    public void spend()
-    { System.out.println("Spending..");}
-    public void consult(){
-        System.out.println("Consulting..");}
-    public void have(){
-        System.out.println("Having...");
+    public abstract void buy();
+    public abstract void save();
+    public abstract void spend();
+    public abstract void consult();
+    public abstract void have();
     }
 
 
 
-}
+
 
 

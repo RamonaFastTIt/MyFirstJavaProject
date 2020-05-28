@@ -19,6 +19,21 @@ public class MedicalStaff extends HumanBeing {
         this.specialization = specialization;
     }
 
+    @Override
+    public void buy() {
+
+    }
+
+    @Override
+    public void save() {
+
+    }
+
+    @Override
+    public void spend() {
+
+    }
+
     public void consult(){
         System.out.println("Consulting..");}
     public void have(){

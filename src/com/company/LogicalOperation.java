@@ -1,5 +1,7 @@
 package com.company;
+
 import java.util.Arrays;
+import java.util.List;
 
 public class LogicalOperation {
 
@@ -347,23 +349,21 @@ public class LogicalOperation {
         return sum / count;
     }
 
-    public boolean PB5(String[] array)
-    {
-        String a="monica";
-        for (int i = 0; i < array.length; i++)
-        {
-            if (a==array[i]) {
+    public boolean PB5(String[] array) {
+        String a = "monica";
+        for (int i = 0; i < array.length; i++) {
+            if (a == array[i]) {
                 return true;
-            }
-            else {
+            } else {
                 return false;
             }
         }
         return false;
     }
-    public int prb6checkArrayPosition(int[] array , int nr){
+
+    public int prb6checkArrayPosition(int[] array, int nr) {
         int upr = -1;
-        for( int i =0; i< array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             if (array[i] == nr) {
                 System.out.print(" true!!! numarul se afla in array si pozitia lui este : ");
                 upr = i;
@@ -373,10 +373,10 @@ public class LogicalOperation {
         return upr;
     }
 
-    public void grid(){
-        int [][] a = new int [10][10];
-        for (int i = 0; i < 10; i++){
-            for(int j = 0; j < 10; j++){
+    public void grid() {
+        int[][] a = new int[10][10];
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
                 System.out.printf("-");
             }
             System.out.println();
@@ -387,15 +387,16 @@ public class LogicalOperation {
 
     //public int[] PB8(int[] array)
     {
-       // int x=10;
-       // for (int i = 0; i < array.length; i++)
-           // if (x == array[i])
-               // System.out.println(array[i]);
-       // return array;
+        // int x=10;
+        // for (int i = 0; i < array.length; i++)
+        // if (x == array[i])
+        // System.out.println(array[i]);
+        // return array;
     }
-    public void Prb10copyArray(int[] array,int[] arrayGol){
-        for(int i=0; i<array.length;i++){
-            arrayGol[i]=array[i];
+
+    public void Prb10copyArray(int[] array, int[] arrayGol) {
+        for (int i = 0; i < array.length; i++) {
+            arrayGol[i] = array[i];
         }
 
     }
@@ -405,7 +406,58 @@ public class LogicalOperation {
         return array[1];
     }
 
+    public void addToListEx2(List<Integer> list, int x) {
+        list.add(x);
 
+    }
+
+    public void printList(List list) {
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
+        }
+
+
+    }
+
+    public void Ex3(List<Integer> list, int i) {
+        for (i = 2; i < list.size(); i++) {
+            System.out.println(list.get(i));
+        }
+    }
+
+    public void Ex4(List list) {
+        for (int x = list.size() - 1; x >= 0; x--) {
+            System.out.println(list.get(x));
+
+        }
+
+
+    }
+
+    public void Ex5(List<String> list, int y, String Text) {
+        list.add(y, Text);
+    }
+
+    public void addFirstEx6(List<String> list, String Text) {
+        list.add(Text);
+    }
+    public void printListNrandPositionEx7 (List<Integer> lista){
+        for (int i=0 ; i<lista.size(); i++){
+            System.out.println("Pe pozitia "+(i+1)+" valoarea este: "+lista.get(i));
+        }
+    }
+
+    public int Ex8MaxNumber (List<Integer> list){
+        int max = 0;
+        for (int i=0 ; i<list.size();i++){
+            if ((int)list.get(i)>max){
+                max = (int)list.get(i);
+            }
+        }
+        return max;
+    }
+
+    
     }
 
 

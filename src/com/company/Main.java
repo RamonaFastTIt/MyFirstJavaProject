@@ -31,13 +31,14 @@ public class Main {
 
         float D = 5 + 15 / 3 * 2 - 8 % 3;
         System.out.print(D);
+        System.out.println("\n\n");
 
         Calculator calc = new Calculator();
-        System.out.println(calc.sum2(4,4.5));
-        System.out.println(calc.sum2(67.8, 45.9));
-        System.out.println(calc.sum2(3,6,9));
+        System.out.println(calc.sum(4,4.5));
+        System.out.println(calc.sum(67.8, 45.9));
+        System.out.println(calc.sum(3,6,9));
         System.out.println(calc.substraction(88, 66, 122, 23));
-        System.out.println(calc.substraction(55.8, 45, 23));
+       // System.out.println(calc.substraction(55.8, 45, 23));
         System.out.println(calc.multiple(3.5,6.7,8.9));
         System.out.println(calc.multiple(34.5,67,89));
         System.out.println(calc.aggregate(58.99, 34.12));

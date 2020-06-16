@@ -8,9 +8,12 @@ public class Lab3Java {
         int bigger = op.checkBiggerNumber(x, y);
         System.out.println("The bigger number is :" + bigger);
 
+        String text = "FastTrackIt";
+        System.out.println(op.checkTextFastTrackIt(text));
+
         String Text="Monica";
         int number=10;
-        System.out.println(op.checkTexAndNumber(Text, number));
+        System.out.println(op.checkTextAndNumber(Text, number));
 
        int z=7;
        System.out.println(op.checkNumber(z));

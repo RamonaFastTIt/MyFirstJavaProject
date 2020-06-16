@@ -10,7 +10,7 @@ public class Lab5 {
         int[] myArray2 = {10, 23, 33, 28};
         System.out.println(op.PB4(myArray2));
         String[] myArray3 = {"ramona"};
-        System.out.println(op.PB5(myArray3));
+        System.out.println(op.PB5ArrayString(myArray3));
         int[] myArray4 = new int[10];
         //System.out.println(op.PB8(myArray4));
         System.out.println(op.prb6checkArrayPosition(new int[]{7, 11, 8, 28}, 7));

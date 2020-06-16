@@ -26,7 +26,7 @@ public class Calculator {
             System.out.println(restulImpartirii());
             System.out.println(distance());
             System.out.println(viteza());
-            System.out.println(temperature());
+            System.out.println(Temperature());
             System.out.println("      J    a v     v a");
             System.out.println("      J   a a v   v  a a");
             System.out.println("  J   J  aaaaa v v  aaaaa");
@@ -112,22 +112,22 @@ public class Calculator {
             return v1;
         }
 
-        public float temperature() {
+        public float Temperature() {
             float C= (F-32)*((float)5/(float)9);
             return C;
         }
 
     }
 
-    public double sum2(int  first, double second){
+    public double sum(int  first, double second){
         double result = first + second;
         return result;
     }
-    public double sum2(double  first, double second){
+    public double sum(double  first, double second){
         double result = first + second;
         return result;
     }
-    public int sum2(int first, int second, int third){
+    public int sum(int first, int second, int third){
         int result = first + second + third;
         return result;
     }
@@ -135,14 +135,18 @@ public class Calculator {
         int result = first - second- third - four;
         return result;
     }
-    public double substraction(double first, int second, int third){
-        double result= first - second- third;
+    public double substraction(double first, int second){
+        double result= first - second;
         return result;
     }
-    public double multiple( double first, double second, double third){
+    public double multiple( double first, double second, double third) {
         double result = first * second * third;
         return result;
     }
+     public int inmultire(int first, int second, int third){
+        int result = first * second * third;
+        return result;}
+
     public double multiple ( double first, int second, int third){
         double result = first* second* third;
         return second;
@@ -152,8 +156,14 @@ public class Calculator {
         return result;
     }
     public float aggregate( int first, int second, int third){
-        float result = first/second/third;
+        int result = first/second/third;
         return result;
 
+    }
+    public float Distance(float Inch) {
+        float a = 35.455F;
+        float b = Inch / a;
+        System.out.println("Valoarea transformata este : " + b);
+        return b;
     }
 }

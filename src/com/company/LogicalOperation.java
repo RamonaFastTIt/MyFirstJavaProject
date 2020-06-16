@@ -3,6 +3,8 @@ package com.company;
 import java.util.Arrays;
 import java.util.List;
 
+import static java.lang.Thread.sleep;
+
 public class LogicalOperation {
 
     public int checkBiggerNumber(int first, int second) {
@@ -12,8 +14,15 @@ public class LogicalOperation {
             return second;
         }
     }
+    public String checkTextFastTrackIt(String text){
+       if(text.equals("FastTrackIt")){
+           return "Learning...";
+       }else{
+           return "got to try some more";
+       }
+    }
 
-    public String checkTexAndNumber(String Text, int number) {
+    public String checkTextAndNumber(String Text, int number) {
         if ((Text.equals("FastTrackIt")) && (number <= 3)) {
             return (Text + number);
         }
@@ -349,7 +358,7 @@ public class LogicalOperation {
         return sum / count;
     }
 
-    public boolean PB5(String[] array) {
+    public boolean PB5ArrayString(String[] array) {
         String a = "monica";
         for (int i = 0; i < array.length; i++) {
             if (a == array[i]) {
@@ -441,24 +450,37 @@ public class LogicalOperation {
     public void addFirstEx6(List<String> list, String Text) {
         list.add(Text);
     }
-    public void printListNrandPositionEx7 (List<Integer> lista){
-        for (int i=0 ; i<lista.size(); i++){
-            System.out.println("Pe pozitia "+(i+1)+" valoarea este: "+lista.get(i));
+
+    public void printListNrandPositionEx7(List<Integer> lista) {
+        for (int i = 0; i < lista.size(); i++) {
+            System.out.println("Pe pozitia " + (i + 1) + " valoarea este: " + lista.get(i));
         }
     }
 
-    public int Ex8MaxNumber (List<Integer> list){
+    public int Ex8MaxNumber(List<Integer> list) {
         int max = 0;
-        for (int i=0 ; i<list.size();i++){
-            if ((int)list.get(i)>max){
-                max = (int)list.get(i);
+        for (int i = 0; i < list.size(); i++) {
+            if ((int) list.get(i) > max) {
+                max = (int) list.get(i);
             }
         }
         return max;
     }
 
-    
+
+    public void waitt (int secunde) {
+        try {
+            Thread.sleep(secunde*1000);
+            System.out.println("you waited "+secunde+" seconds");
+        } catch (InterruptedException e) {
+            System.out.println("Time out");
+        }
     }
+        }
+
+
+
+
 
 
 

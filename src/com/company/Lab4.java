@@ -6,7 +6,7 @@ public class Lab4 {
         op.checkreceivednumber(55);
         int number = 12;
         op.checknumber(number);
-        op.coutingnumber(5, 8);
+        op.countingnumber(5, 8);
         op.evenumber(1);
         op.oddnumber(1);
         op.ex7sum(33);
@@ -24,6 +24,8 @@ public class Lab4 {
         op.whileEx7();
         op.Fibonacci();
         op.CozaLozaWoza();
+
+
     }
 
 }
